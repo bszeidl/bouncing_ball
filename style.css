@@ -7,7 +7,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: url("./soccer_field.svg") no-repeat center;
+    background: url("./soccer_stadium2.png") no-repeat center;
     background-size: 100%; 
     
 }
@@ -15,7 +15,7 @@
 .soccer {
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: absolute;    
     animation: bounce 1s ease-in .1s infinite alternate both;
 }
 
@@ -23,9 +23,11 @@
     0% {
         left: var(--from-left);
         bottom: var(--from-bottom);
+        transform: rotate(-700deg);
     }
     100% {
         left: var(--from-left);
         bottom: 0%;
+        transform: rotate(360deg);
     }
 }
